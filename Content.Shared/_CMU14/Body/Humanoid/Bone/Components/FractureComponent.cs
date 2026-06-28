@@ -1,6 +1,7 @@
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._CMU14.Medical.Bones;
+namespace Content.Shared._CMU14.Body.Humanoid.Bone.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause]
 [Access(typeof(SharedFractureSystem), typeof(SharedBoneSystem))]

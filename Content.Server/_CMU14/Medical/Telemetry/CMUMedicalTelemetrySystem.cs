@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.Bones.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
 using Content.Shared._CMU14.Body.Part.Components;
 using Content.Shared._CMU14.Body.Humanoid.Organ;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Events;

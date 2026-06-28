@@ -1,7 +1,9 @@
 using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.Bones.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
 using Content.Shared._CMU14.Medical.Items;
 using Content.Shared._CMU14.Body.Humanoid.Organ;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Brain;
@@ -480,7 +482,7 @@ public abstract partial class SharedPainShockSystem : EntitySystem
 
         foreach (var (partUid, _) in Body.GetBodyChildren(body))
         {
-            if (TryComp<FractureComponent>(partUid, out var frac))
+            if (TryComp<Body.Humanoid.Bone.Components.FractureComponent>(partUid, out var frac))
                 AddPainSource(ref sourceCount, ref highest, ref total, ref riseRate,
                     FracturePainTarget(Fracture.GetEffectiveSeverity((partUid, frac))));
 

@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
 using Content.Shared.FixedPoint;
 
-namespace Content.Shared._CMU14.Medical.Bones;
+namespace Content.Shared._CMU14.Body.Humanoid.Bone;
 
 public static class FractureProfile
 {

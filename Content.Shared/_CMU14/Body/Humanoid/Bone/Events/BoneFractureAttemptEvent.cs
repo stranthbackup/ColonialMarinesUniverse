@@ -1,4 +1,4 @@
-namespace Content.Shared._CMU14.Medical.Bones.Events;
+namespace Content.Shared._CMU14.Body.Humanoid.Bone.Events;
 
 /// <summary>
 ///     Raised on a body-part entity right before a fracture is assigned (or

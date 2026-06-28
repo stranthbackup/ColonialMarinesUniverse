@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._CMU14.Medical.Bones;
+namespace Content.Shared._CMU14.Body.Humanoid.Bone.Components;
 
 /// <summary>
 ///     Temporary post-op window after fracture surgery. A cast stabilizes the

@@ -1,6 +1,6 @@
 using Robust.Shared.GameObjects;
 
-namespace Content.Shared._CMU14.Medical.Bones.Events;
+namespace Content.Shared._CMU14.Body.Humanoid.Bone.Events;
 
 [ByRefEvent]
 public readonly record struct BoneFracturedEvent(
