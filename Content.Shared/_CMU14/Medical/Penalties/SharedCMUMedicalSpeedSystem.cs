@@ -11,8 +11,7 @@ using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Eyes;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
-using Content.Shared._CMU14.Medical.StatusEffects;
-using Content.Shared._CMU14.Medical.StatusEffects.Events;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Movement.Systems;
@@ -21,6 +20,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
+using Content.Shared._CMU14.StatusEffect.Events;
 
 namespace Content.Shared._CMU14.Medical.Penalties;
 

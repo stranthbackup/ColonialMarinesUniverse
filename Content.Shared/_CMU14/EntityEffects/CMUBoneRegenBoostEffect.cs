@@ -1,4 +1,4 @@
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared.EntityEffects;
 using Content.Shared.StatusEffectNew;
 using JetBrains.Annotations;

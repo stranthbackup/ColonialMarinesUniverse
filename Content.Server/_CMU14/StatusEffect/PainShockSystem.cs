@@ -1,9 +1,9 @@
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared.Popups;
 using Content.Shared.Stunnable;
 using Robust.Shared.GameObjects;
 
-namespace Content.Server._CMU14.Medical.StatusEffects;
+namespace Content.Server._CMU14.StatusEffect;
 
 public sealed partial class PainShockSystem : SharedPainShockSystem
 {

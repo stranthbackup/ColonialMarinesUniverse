@@ -1,6 +1,6 @@
 using Content.Shared.FixedPoint;
 
-namespace Content.Shared._CMU14.Medical.StatusEffects;
+namespace Content.Shared._CMU14.StatusEffect;
 
 public enum PainTier : byte
 {

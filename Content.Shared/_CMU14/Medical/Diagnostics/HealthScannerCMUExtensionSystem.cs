@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Bones;
@@ -8,7 +7,7 @@ using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Medical.Scanner;
@@ -19,7 +18,6 @@ using Content.Shared.Body.Systems;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 

@@ -2,7 +2,7 @@ using Content.Server._RMC14.Damage;
 using Content.Server.Body.Systems;
 using Content.Server.Speech.Components;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.TemporaryBlurryVision;
 using Content.Shared._RMC14.Emote;
 using Content.Shared._RMC14.Synth;
@@ -17,7 +17,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
-namespace Content.Server._CMU14.Medical.StatusEffects;
+namespace Content.Server._CMU14.StatusEffect;
 
 public sealed partial class CMUPainFeedbackSystem : EntitySystem
 {

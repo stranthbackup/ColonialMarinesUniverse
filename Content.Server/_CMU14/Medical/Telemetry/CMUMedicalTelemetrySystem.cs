@@ -6,7 +6,7 @@ using Content.Shared._CMU14.Body.Part.Components;
 using Content.Shared._CMU14.Body.Humanoid.Organ;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
 using Content.Shared._CMU14.Medical.Shrapnel;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.Surgery;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Medical.Defibrillator;

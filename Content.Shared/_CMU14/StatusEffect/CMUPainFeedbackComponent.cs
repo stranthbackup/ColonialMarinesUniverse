@@ -3,7 +3,7 @@ using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared._CMU14.Medical.StatusEffects;
+namespace Content.Shared._CMU14.StatusEffect;
 
 [RegisterComponent, AutoGenerateComponentPause]
 public sealed partial class CMUPainFeedbackComponent : Component

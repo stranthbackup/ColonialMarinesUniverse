@@ -9,7 +9,7 @@ using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Stomach;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Medical.Wounds;
 using Content.Shared.Body.Part;

@@ -10,7 +10,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 
 
-namespace Content.Shared._CMU14.Medical.StatusEffects;
+namespace Content.Shared._CMU14.StatusEffect;
 
 public sealed partial class SemiPermanentInjuryTriggerSystem : EntitySystem
 {

@@ -3,7 +3,7 @@ using Content.Shared.CCVar;
 using Content.Shared._CMU14.Body.Part.Components;
 using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._CMU14.Medical.Wounds.Events;
 using Content.Shared.Body.Part;
