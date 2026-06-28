@@ -112,7 +112,7 @@ public sealed partial class HealthScannerCMUExtensionSystem : EntitySystem
         var seen = new HashSet<(BodyPartType, BodyPartSymmetry)>();
         foreach (var (partUid, partComp) in _body.GetBodyChildren(patient))
         {
-            if (!TryComp<BodyPart.BodyPartHealthComponent>(partUid, out var ph))
+            if (!TryComp<Body.Part.Components.BodyPartHealthComponent>(partUid, out var ph))
                 continue;
 
             var key = (partComp.PartType, partComp.Symmetry);

@@ -1,7 +1,7 @@
 using Content.Shared.Body.Part;
 using Robust.Shared.GameObjects;
 
-namespace Content.Shared._CMU14.Medical.BodyPart.Events;
+namespace Content.Shared._CMU14.Body.Part.Events;
 
 /// <summary>
 ///     Raised on a body-part entity when its HP fraction crosses the per-part

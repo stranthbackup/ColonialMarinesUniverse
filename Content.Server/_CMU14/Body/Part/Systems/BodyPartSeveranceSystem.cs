@@ -2,8 +2,8 @@ using System.Numerics;
 using Content.Server.StatusEffectNew;
 using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Damage;
 using Content.Shared._RMC14.Medical.Wounds;
@@ -21,7 +21,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
-namespace Content.Server._CMU14.Medical.BodyPart;
+namespace Content.Server._CMU14.Body.Part.Systems;
 
 /// <summary>
 ///     Head and torso safety locks are enforced upstream in

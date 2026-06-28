@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Numerics;
-using Content.Shared._CMU14.Medical.BodyPart;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared.Body.Components;
 using Content.Shared.Destructible;
 using Content.Shared._CMU14.Medical.Surgery;

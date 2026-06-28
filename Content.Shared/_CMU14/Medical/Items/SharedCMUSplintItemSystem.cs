@@ -2,8 +2,8 @@ using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.DoAfter;
@@ -17,6 +17,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
+using Content.Shared._CMU14.Body.Part.Events;
 
 namespace Content.Shared._CMU14.Medical.Items;
 

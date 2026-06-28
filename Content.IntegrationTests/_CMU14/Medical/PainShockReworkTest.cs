@@ -1,5 +1,5 @@
 using Content.Shared.CCVar;
-using Content.Shared._CMU14.Medical.BodyPart;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.EntityEffects;
 using Content.Shared._CMU14.Body.Humanoid.Organ;

@@ -1,5 +1,4 @@
 using Content.Shared.CCVar;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared._CMU14.Medical.Bones.Events;
 using Content.Shared._CMU14.Medical.Items;
 using Content.Shared._CMU14.Body.Humanoid.Organ;
@@ -21,6 +20,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._CMU14.Body.Part.Events;
 
 namespace Content.Shared._CMU14.Medical.Bones;
 

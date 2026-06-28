@@ -1,7 +1,5 @@
 using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
 using Content.Shared._CMU14.Medical.Items;
@@ -16,6 +14,8 @@ using Content.Shared._CMU14.Body.Humanoid.Organ.Kidneys;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Liver;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Stomach;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
 using Content.Shared._CMU14.Medical.StatusEffects.Events;
@@ -33,6 +33,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+
 
 namespace Content.Shared._CMU14.Medical.StatusEffects;
 

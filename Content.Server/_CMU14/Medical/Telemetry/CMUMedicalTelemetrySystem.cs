@@ -2,8 +2,7 @@ using System.Collections.Generic;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
+using Content.Shared._CMU14.Body.Part.Components;
 using Content.Shared._CMU14.Body.Humanoid.Organ;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
 using Content.Shared._CMU14.Medical.Shrapnel;
@@ -18,6 +17,7 @@ using Content.Shared.GameTicking;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Log;
 using Robust.Shared.Timing;
+using Content.Shared._CMU14.Body.Part.Events;
 
 namespace Content.Server._CMU14.Medical.Telemetry;
 
@@ -48,14 +48,14 @@ public sealed partial class CMUMedicalTelemetrySystem : EntitySystem
         _sawmill = _log.GetSawmill("cmu.medical.telemetry");
 
         SubscribeLocalEvent<HitLocationComponent, HitLocationResolvedEvent>(OnHitResolved);
-        SubscribeLocalEvent<Content.Shared._CMU14.Medical.BodyPart.BodyPartHealthComponent, BoneFracturedEvent>(OnFractureSpawn);
+        SubscribeLocalEvent<Content.Shared._CMU14.Body.Part.Components.BodyPartHealthComponent, BoneFracturedEvent>(OnFractureSpawn);
         SubscribeLocalEvent<OrganStageChangedEvent>(OnOrganStage);
         SubscribeLocalEvent<CMSurgeryTargetComponent, CMSurgeryCompleteEvent>(OnSurgeryDone);
         SubscribeLocalEvent<DamageableComponent, RMCDefibrillatorAttemptEvent>(OnDefibAttempt);
         SubscribeLocalEvent<CMUPainShockStatusComponent, ComponentStartup>(OnPainShockEntered);
         SubscribeLocalEvent<BodyPartComponent, BodyPartSeveredEvent>(OnBodyPartSevered);
         SubscribeLocalEvent<InternalBleedingChangedEvent>(OnInternalBleedingChanged);
-        SubscribeLocalEvent<Content.Shared._CMU14.Medical.BodyPart.BodyPartHealthComponent, CMUShrapnelChangedEvent>(OnShrapnelChanged);
+        SubscribeLocalEvent<Content.Shared._CMU14.Body.Part.Components.BodyPartHealthComponent, CMUShrapnelChangedEvent>(OnShrapnelChanged);
         SubscribeLocalEvent<RoundEndSummaryStatsEvent>(OnRoundEndStats);
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundEnd);
@@ -67,7 +67,7 @@ public sealed partial class CMUMedicalTelemetrySystem : EntitySystem
         _hitCounts[args.ResolvedPart] = prior + 1;
     }
 
-    private void OnFractureSpawn(Entity<Content.Shared._CMU14.Medical.BodyPart.BodyPartHealthComponent> ent, ref BoneFracturedEvent args)
+    private void OnFractureSpawn(Entity<Content.Shared._CMU14.Body.Part.Components.BodyPartHealthComponent> ent, ref BoneFracturedEvent args)
     {
         if (args.Old == args.New)
             return;
@@ -117,7 +117,7 @@ public sealed partial class CMUMedicalTelemetrySystem : EntitySystem
             _internalBleedsStarted++;
     }
 
-    private void OnShrapnelChanged(Entity<Content.Shared._CMU14.Medical.BodyPart.BodyPartHealthComponent> ent, ref CMUShrapnelChangedEvent args)
+    private void OnShrapnelChanged(Entity<Content.Shared._CMU14.Body.Part.Components.BodyPartHealthComponent> ent, ref CMUShrapnelChangedEvent args)
     {
         if (args.Removed)
             _shrapnelExtracted++;

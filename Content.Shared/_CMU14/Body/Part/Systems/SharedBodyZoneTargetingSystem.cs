@@ -1,11 +1,12 @@
 using Content.Shared.CCVar;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared.Body.Part;
 using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Timing;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
 
-namespace Content.Shared._CMU14.Medical.BodyPart;
+namespace Content.Shared._CMU14.Body.Part.Systems;
 
 public abstract partial class SharedBodyZoneTargetingSystem : EntitySystem
 {

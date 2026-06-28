@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;

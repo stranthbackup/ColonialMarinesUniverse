@@ -11,7 +11,7 @@ using Content.Shared.FixedPoint;
 using Robust.Shared.Map;
 using Robust.Shared.Maths;
 
-namespace Content.Shared._CMU14.Medical.BodyPart;
+namespace Content.Shared._CMU14.Body.Part.Systems;
 
 public sealed partial class CMUExplosionMedicalTraumaSystem : EntitySystem
 {

@@ -1,7 +1,8 @@
-using Content.Shared.Body.Part;
 using Robust.Shared.GameStates;
+using Content.Shared._CMU14.Body.Part.Systems;
+using Content.Shared.Body.Part;
 
-namespace Content.Shared._CMU14.Medical.BodyPart;
+namespace Content.Shared._CMU14.Body.Part.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SharedHitLocationSystem))]

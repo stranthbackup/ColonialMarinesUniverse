@@ -2,8 +2,9 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Reflection;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Systems;
+using Content.Shared._CMU14.Body.Part.Events;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
 using Content.Shared._CMU14.Medical.Shrapnel;
@@ -46,6 +47,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Maths;
 using Robust.Shared.Prototypes;
+using Content.Shared._CMU14.Body.Part;
 
 namespace Content.IntegrationTests._RMC14;
 

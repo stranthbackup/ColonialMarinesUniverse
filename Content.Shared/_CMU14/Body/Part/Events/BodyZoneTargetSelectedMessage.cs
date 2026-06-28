@@ -1,6 +1,7 @@
+using Content.Shared._CMU14.Body.Part;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._CMU14.Medical.BodyPart.Events;
+namespace Content.Shared._CMU14.Body.Part.Events;
 
 /// <summary>
 ///     Raised by the client HUD widget when the local shooter clicks a zone on the

@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Content.Shared.CCVar;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
@@ -11,8 +10,11 @@ using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
+using Content.Shared._CMU14.Medical;
 
-namespace Content.Shared._CMU14.Medical.BodyPart;
+namespace Content.Shared._CMU14.Body.Part.Systems;
 
 /// <summary>
 ///     Subscribes to <see cref="BeforeDamageChangedEvent"/> (fires for every

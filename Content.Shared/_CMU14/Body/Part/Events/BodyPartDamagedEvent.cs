@@ -5,7 +5,7 @@ using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Robust.Shared.GameObjects;
 
-namespace Content.Shared._CMU14.Medical.BodyPart.Events;
+namespace Content.Shared._CMU14.Body.Part.Events;
 
 [ByRefEvent]
 public readonly record struct BodyPartDamagedEvent(

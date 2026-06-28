@@ -1,5 +1,6 @@
 using System.Linq;
-using Content.Shared._CMU14.Medical.BodyPart;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared._RMC14.Shields;
 using Content.Shared._RMC14.Xenonids.Charge;
 using Content.Shared.Actions;

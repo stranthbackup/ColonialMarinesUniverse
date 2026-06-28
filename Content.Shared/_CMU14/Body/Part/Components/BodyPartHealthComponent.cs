@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._CMU14.Medical.BodyPart;
+namespace Content.Shared._CMU14.Body.Part.Components;
 
 /// <summary>
 ///     Per-body-part HP ledger that runs alongside the entity-level

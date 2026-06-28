@@ -1,6 +1,6 @@
 using Content.Shared.CCVar;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Brain;
 using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
 using Content.Shared.Body.Part;
@@ -8,6 +8,7 @@ using Content.Shared.StatusEffectNew;
 using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
+
 
 namespace Content.Shared._CMU14.Medical.StatusEffects;
 
