@@ -58,7 +58,7 @@ public sealed partial class CMUMedicalCCVars : CVars
         CVarDef.Create("cmu.medical.body_part.damage_propagation", 1.0f, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<bool> SeveranceHeadDisabled =
-        CVarDef.Create("cmu.medical.severance.head_disabled", true, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("cmu.medical.severance.head_disabled", false, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<bool> SeveranceTorsoDisabled =
         CVarDef.Create("cmu.medical.severance.torso_disabled", true, CVar.REPLICATED | CVar.SERVER);
@@ -139,8 +139,8 @@ public sealed partial class CMUMedicalCCVars : CVars
     public static readonly CVarDef<float> FractureCompoundInternalBleed =
         CVarDef.Create("cmu.medical.fracture.compound_internal_bleed", 0.5f, CVar.REPLICATED | CVar.SERVER);
 
-    public static readonly CVarDef<float> FractureComminutedInternalBleed =
-        CVarDef.Create("cmu.medical.fracture.comminuted_internal_bleed", 1.0f, CVar.REPLICATED | CVar.SERVER);
+    public static readonly CVarDef<float> FractureShatteredInternalBleed =
+        CVarDef.Create("cmu.medical.fracture.shattered_internal_bleed", 1.0f, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<float> OrganPassiveHealMultiplier =
         CVarDef.Create("cmu.medical.organ.passive_heal_multiplier", 0.5f, CVar.REPLICATED | CVar.SERVER);
@@ -158,7 +158,7 @@ public sealed partial class CMUMedicalCCVars : CVars
         CVarDef.Create("cmu.medical.pain.decay_per_second", 1.0f, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<float> PainShockThreshold =
-        CVarDef.Create("cmu.medical.pain.shock_threshold", 85f, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("cmu.medical.pain.shock_threshold", 80f, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     Pain tier downward-cross threshold offset (in raw pain units).
