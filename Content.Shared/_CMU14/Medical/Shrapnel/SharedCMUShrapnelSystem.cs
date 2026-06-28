@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical.BodyPart;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.StatusEffects;
@@ -496,7 +497,7 @@ public sealed partial class SharedCMUShrapnelSystem : EntitySystem
         FractureSeverity.Hairline => 3f,
         FractureSeverity.Simple => 8f,
         FractureSeverity.Compound => 14f,
-        FractureSeverity.Comminuted => 22f,
+        FractureSeverity.Shattered => 22f,
         _ => 0f,
     };
 }

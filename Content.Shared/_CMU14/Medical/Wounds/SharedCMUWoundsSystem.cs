@@ -1,13 +1,13 @@
-using System;
-using System.Collections.Generic;
-using Content.Shared._CMU14.Medical;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical.BodyPart;
 using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
 using Content.Shared._CMU14.Medical.Items;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Systems;
 using Content.Shared._CMU14.Medical.Trauma;
 using Content.Shared._CMU14.Medical.Wounds.Events;
 using Content.Shared._RMC14.Medical.Unrevivable;
@@ -347,7 +347,7 @@ public abstract partial class SharedCMUWoundsSystem : EntitySystem
         if (rate <= 0f || ignoreSplint || !HasComp<CMUSplintedComponent>(part))
             return rate;
 
-        return fracture.Severity == FractureSeverity.Comminuted
+        return fracture.Severity == FractureSeverity.Shattered
             ? rate * SplintedComminutedInternalBleedMultiplier
             : 0f;
     }

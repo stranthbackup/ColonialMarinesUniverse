@@ -1,5 +1,6 @@
 using System;
 using Content.Server._CMU14.Medical.Wounds;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.BodyPart;
 using Content.Shared._CMU14.Medical.Surgery;

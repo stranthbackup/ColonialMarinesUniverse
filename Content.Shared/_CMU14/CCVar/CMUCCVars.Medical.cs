@@ -1,7 +1,7 @@
 using Robust.Shared;
 using Robust.Shared.Configuration;
 
-namespace Content.Shared._CMU14.Medical;
+namespace Content.Shared.CCVar;
 
 [CVarDefs]
 public sealed partial class CMUMedicalCCVars : CVars

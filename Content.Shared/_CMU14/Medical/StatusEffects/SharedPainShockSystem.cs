@@ -1,19 +1,21 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.BodyPart;
 using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
 using Content.Shared._CMU14.Medical.Items;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Brain;
-using Content.Shared._CMU14.Medical.Organs.Ears;
-using Content.Shared._CMU14.Medical.Organs.Eyes;
-using Content.Shared._CMU14.Medical.Organs.Events;
-using Content.Shared._CMU14.Medical.Organs.Heart;
-using Content.Shared._CMU14.Medical.Organs.Kidneys;
-using Content.Shared._CMU14.Medical.Organs.Liver;
-using Content.Shared._CMU14.Medical.Organs.Lungs;
-using Content.Shared._CMU14.Medical.Organs.Stomach;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Brain;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Ears;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Eyes;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Kidneys;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Liver;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Stomach;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
 using Content.Shared._CMU14.Medical.StatusEffects.Events;
@@ -562,7 +564,7 @@ public abstract partial class SharedPainShockSystem : EntitySystem
         FractureSeverity.Hairline => 10f,
         FractureSeverity.Simple => 25f,
         FractureSeverity.Compound => 45f,
-        FractureSeverity.Comminuted => 65f,
+        FractureSeverity.Shattered => 65f,
         _ => 0f,
     };
 

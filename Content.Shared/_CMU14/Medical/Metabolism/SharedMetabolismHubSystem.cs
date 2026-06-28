@@ -1,6 +1,7 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical.Metabolism.Events;
-using Content.Shared._CMU14.Medical.Organs.Kidneys;
-using Content.Shared._CMU14.Medical.Organs.Liver;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Kidneys;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Liver;
 using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Timing;

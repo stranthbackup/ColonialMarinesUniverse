@@ -1,7 +1,7 @@
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
 using Content.Shared._CMU14.Medical.Surgery.Traits;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared.Body.Part;
@@ -40,7 +40,7 @@ public sealed partial class CMUSurgicalTraitGenerationSystem : EntitySystem
             return;
         }
 
-        if (args.New != FractureSeverity.Comminuted)
+        if (args.New != FractureSeverity.Shattered)
             return;
 
         _surgicalTraits.TryEnsureTrait(args.Part, CMUSurgicalTrait.BoneSplintered);

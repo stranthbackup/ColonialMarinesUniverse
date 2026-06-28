@@ -9,7 +9,7 @@ using Content.Shared._CMU14.Medical.Bones.Events;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Server._CMU14.Medical.Wounds;
-using Content.Shared._CMU14.Medical.Organs.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
 using Content.Shared._RMC14.Explosion;
 using Content.Shared._CMU14.Medical.Surgery;
 using Content.Shared._CMU14.Medical.Surgery.Markers;

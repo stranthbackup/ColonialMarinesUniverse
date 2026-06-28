@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical.BodyPart.Events;
 using Content.Shared._CMU14.Medical.Trauma;
 using Content.Shared._CMU14.Medical.Wounds;

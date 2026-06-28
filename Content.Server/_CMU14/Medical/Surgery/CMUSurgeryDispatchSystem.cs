@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using Content.Server._RMC14.Medical.Surgery;
 using Content.Server.Popups;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.BodyPart;
 using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.Organs;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
 using Content.Shared._CMU14.Medical.Surgery;
 using Content.Shared._CMU14.Medical.Surgery.Conditions;
 using Content.Shared._CMU14.Medical.Surgery.Effects;
@@ -397,7 +399,7 @@ public sealed partial class CMUSurgeryDispatchSystem : EntitySystem
                     FractureSeverity.Hairline => "hairline",
                     FractureSeverity.Simple => "simple",
                     FractureSeverity.Compound => "compound",
-                    FractureSeverity.Comminuted => "comminuted",
+                    FractureSeverity.Shattered => "comminuted",
                     _ => "fracture",
                 };
                 bits.Add(Loc.GetString("cmu-medical-surgery-condition-fracture",

@@ -1,8 +1,9 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Bones.Events;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Medical.HUD;
 using Content.Shared._RMC14.Medical.HUD.Components;

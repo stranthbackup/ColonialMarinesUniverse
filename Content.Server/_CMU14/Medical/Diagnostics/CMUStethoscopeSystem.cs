@@ -1,8 +1,8 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Diagnostics;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Heart;
-using Content.Shared._CMU14.Medical.Organs.Lungs;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
 using Content.Shared._CMU14.Medical.StatusEffects;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Medical.Scanner;

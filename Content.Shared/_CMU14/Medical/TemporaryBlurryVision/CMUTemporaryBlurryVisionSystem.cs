@@ -1,4 +1,4 @@
-using Content.Shared._CMU14.Medical.Organs.Eyes;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Eyes;
 using Content.Shared.Eye.Blinding.Systems;
 using Content.Shared.Rejuvenate;
 using Robust.Shared.Network;

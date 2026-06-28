@@ -1,3 +1,4 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared.Body.Events;
 using Content.Shared.Body.Organ;

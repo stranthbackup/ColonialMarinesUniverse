@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.Items;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
 using Content.Shared._CMU14.Medical.StatusEffects;

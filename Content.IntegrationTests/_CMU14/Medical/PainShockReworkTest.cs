@@ -1,11 +1,12 @@
-using Content.Shared._CMU14.Medical;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical.BodyPart;
 using Content.Shared._CMU14.Medical.Bones;
 using Content.Shared._CMU14.Medical.EntityEffects;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Heart;
-using Content.Shared._CMU14.Medical.Organs.Lungs;
-using Content.Shared._CMU14.Medical.Organs.Stomach;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Stomach;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
 using Content.Shared._CMU14.Medical.StatusEffects;
@@ -56,7 +57,7 @@ public sealed class PainShockReworkTest
             {
                 var part = GetFirstPart(entMan, human);
                 var frac = entMan.EnsureComponent<FractureComponent>(part);
-                fracture.SetSeverity((part, frac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((part, frac), FractureSeverity.Shattered);
 
                 var profile = pain.ComputePainSourceProfile(human);
                 var rawTier = PainTierThresholds.Get(PainTier.None, profile.Target, 0f, pain.ShockThreshold);
@@ -94,7 +95,7 @@ public sealed class PainShockReworkTest
             {
                 var part = GetFirstPart(entMan, human);
                 var frac = entMan.EnsureComponent<FractureComponent>(part);
-                fracture.SetSeverity((part, frac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((part, frac), FractureSeverity.Shattered);
                 AddWound(entMan, part, WoundSize.Massive, treated: false);
                 entMan.EnsureComponent<CMUEscharComponent>(part);
 

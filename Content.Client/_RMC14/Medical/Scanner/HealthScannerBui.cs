@@ -984,18 +984,18 @@ public sealed partial class HealthScannerBui : BoundUserInterface
             Content.Shared._CMU14.Medical.Bones.FractureSeverity.Hairline => PartSeverity.Bruised,
             Content.Shared._CMU14.Medical.Bones.FractureSeverity.Simple => PartSeverity.Damaged,
             Content.Shared._CMU14.Medical.Bones.FractureSeverity.Compound => PartSeverity.Critical,
-            Content.Shared._CMU14.Medical.Bones.FractureSeverity.Comminuted => PartSeverity.Critical,
+            Content.Shared._CMU14.Medical.Bones.FractureSeverity.Shattered => PartSeverity.Critical,
             _ => PartSeverity.Bruised,
         };
 
-    private static PartSeverity SeverityFromOrganStage(Content.Shared._CMU14.Medical.Organs.OrganDamageStage stage)
+    private static PartSeverity SeverityFromOrganStage(Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage stage)
         => stage switch
         {
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Healthy => PartSeverity.Healthy,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Bruised => PartSeverity.Bruised,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Damaged => PartSeverity.Damaged,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Failing => PartSeverity.Critical,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Dead => PartSeverity.Severed,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Healthy => PartSeverity.Healthy,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Bruised => PartSeverity.Bruised,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Damaged => PartSeverity.Damaged,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Failing => PartSeverity.Critical,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Dead => PartSeverity.Severed,
             _ => PartSeverity.Healthy,
         };
 
