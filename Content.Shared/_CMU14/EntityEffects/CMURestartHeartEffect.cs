@@ -7,7 +7,7 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
-namespace Content.Shared._CMU14.Medical.EntityEffects;
+namespace Content.Shared._CMU14.EntityEffects;
 
 /// <summary>
 ///     A flatlined Dead-stage heart is past the point where chemistry can save it;

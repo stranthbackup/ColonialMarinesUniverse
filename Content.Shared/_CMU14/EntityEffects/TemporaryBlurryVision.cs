@@ -3,7 +3,7 @@ using Content.Shared.EntityEffects;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._CMU14.Medical.EntityEffects;
+namespace Content.Shared._CMU14.EntityEffects;
 
 [UsedImplicitly]
 public sealed partial class TemporaryBlurryVision : EntityEffect
