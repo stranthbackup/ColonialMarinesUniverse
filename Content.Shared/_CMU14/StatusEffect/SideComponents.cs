@@ -66,3 +66,27 @@ public sealed partial class NerveDamageComponent : Component
     [DataField, AutoNetworkedField]
     public BodyPartType Part = BodyPartType.Arm;
 }
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveBleedingComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveOrganSymptomsComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveBoneKnittingComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveUnsplintedFractureRiskComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveEmbeddedObjectMovementComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveTourniquetComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveTreatedWoundHealingComponent : Component;
+
+[RegisterComponent, NetworkedComponent]
+public sealed partial class ActiveMedicalSummaryDirtyComponent : Component;
