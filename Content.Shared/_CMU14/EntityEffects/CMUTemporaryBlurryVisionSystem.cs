@@ -4,7 +4,7 @@ using Content.Shared.Rejuvenate;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._CMU14.Medical.TemporaryBlurryVision;
+namespace Content.Shared._CMU14.EntityEffects;
 
 public sealed partial class CMUTemporaryBlurryVisionSystem : EntitySystem
 {

@@ -1,4 +1,3 @@
-using Content.Shared._CMU14.Medical.TemporaryBlurryVision;
 using Content.Shared.EntityEffects;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;

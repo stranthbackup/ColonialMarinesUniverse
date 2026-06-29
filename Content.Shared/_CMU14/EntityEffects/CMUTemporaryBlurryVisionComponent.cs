@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared._CMU14.Medical.TemporaryBlurryVision;
+namespace Content.Shared._CMU14.EntityEffects;
 
 [RegisterComponent, AutoGenerateComponentPause]
 public sealed partial class CMUTemporaryBlurryVisionComponent : Component

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Penalties;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
@@ -8,7 +8,7 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.GameObjects;
 
-namespace Content.Server._CMU14.Medical.Penalties;
+namespace Content.Server._CMU14.StatusEffect;
 
 public sealed partial class CMUMedicalSpeedSystem : SharedCMUMedicalSpeedSystem
 {

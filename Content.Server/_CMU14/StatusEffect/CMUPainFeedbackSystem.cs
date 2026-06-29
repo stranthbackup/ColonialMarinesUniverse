@@ -3,7 +3,7 @@ using Content.Server.Body.Systems;
 using Content.Server.Speech.Components;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.StatusEffect;
-using Content.Shared._CMU14.Medical.TemporaryBlurryVision;
+using Content.Shared._CMU14.EntityEffects;
 using Content.Shared._RMC14.Emote;
 using Content.Shared._RMC14.Synth;
 using Content.Shared.Chat.Prototypes;

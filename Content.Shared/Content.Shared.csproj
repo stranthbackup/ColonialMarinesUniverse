@@ -28,6 +28,7 @@
     <Folder Include="AU14\Objectives\Extract\" />
     <Folder Include="_CMU14\Body\Components\" />
     <Folder Include="_CMU14\Body\Synth\" />
+    <Folder Include="_CMU14\Medical\TemporaryBlurryVision\" />
     <Folder Include="_CMU14\Round\Antags\" />
     <Folder Include="_CMU14\Util\CCVars\" />
     <Folder Include="_RMC14\Extract\" />

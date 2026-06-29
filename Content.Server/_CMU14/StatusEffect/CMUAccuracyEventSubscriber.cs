@@ -1,6 +1,6 @@
 using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Penalties;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._RMC14.Weapons.Ranged;
 using Content.Shared.FixedPoint;
 using Content.Shared.Weapons.Ranged.Events;
@@ -8,7 +8,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Maths;
 
-namespace Content.Server._CMU14.Medical.Penalties;
+namespace Content.Server._CMU14.StatusEffect;
 
 public sealed partial class CMUAccuracyEventSubscriber : EntitySystem
 {
