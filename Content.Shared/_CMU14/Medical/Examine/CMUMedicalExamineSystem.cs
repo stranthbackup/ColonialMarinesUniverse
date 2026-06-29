@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Bones;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
 using Content.Shared._CMU14.Medical.Items;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Medical.Wounds;
@@ -442,7 +445,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
         {
             FractureSeverity.Simple => $"a {prefix}simple fracture",
             FractureSeverity.Compound => $"a {prefix}compound fracture",
-            FractureSeverity.Comminuted => $"a {prefix}shattered bone",
+            FractureSeverity.Shattered => $"a {prefix}shattered bone",
             _ => "a broken bone",
         };
     }
@@ -537,7 +540,7 @@ public sealed partial class CMUMedicalExamineSystem : EntitySystem
             FractureSeverity.Hairline => $"{prefix}hairline fracture",
             FractureSeverity.Simple => $"{prefix}simple fracture",
             FractureSeverity.Compound => $"{prefix}compound fracture",
-            FractureSeverity.Comminuted => $"{prefix}comminuted fracture",
+            FractureSeverity.Shattered => $"{prefix}comminuted fracture",
             _ => "fracture",
         };
     }

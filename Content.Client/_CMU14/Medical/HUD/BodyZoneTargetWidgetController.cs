@@ -1,8 +1,10 @@
 using Content.Client.Gameplay;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Input;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
+using Content.Shared._CMU14.Body.Part;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
 using Robust.Client.Input;
 using Robust.Client.Player;
 using Robust.Client.UserInterface;
@@ -12,7 +14,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Input.Binding;
 using MainViewport = Content.Client.UserInterface.Controls.MainViewport;
-using ClientBodyZoneTargetingSystem = Content.Client._CMU14.Medical.BodyPart.BodyZoneTargetingSystem;
+using ClientBodyZoneTargetingSystem = Content.Client._CMU14.Body.Part.Systems.BodyZoneTargetingSystem;
 
 namespace Content.Client._CMU14.Medical.HUD;
 

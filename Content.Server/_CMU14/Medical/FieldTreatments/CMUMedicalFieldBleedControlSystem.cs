@@ -1,6 +1,8 @@
+using Content.Shared.CCVar;
 using Content.Server._CMU14.Medical.Wounds;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Systems;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
+using Content.Shared._CMU14.Body.Part;
 using Content.Shared._CMU14.Medical.FieldTreatments;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Marines.Skills;
@@ -13,6 +15,7 @@ using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
+using Content.Shared._CMU14.Body.Part.Systems;
 
 namespace Content.Server._CMU14.Medical.FieldTreatments;
 

@@ -1,12 +1,14 @@
-using System.Collections.Generic;
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Bones;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
 using Content.Shared._CMU14.Medical.Items;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
 using Content.Shared._CMU14.Medical.Shrapnel;
 using Content.Shared._CMU14.Medical.Stabilizers;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Medical.Scanner;
@@ -17,7 +19,6 @@ using Content.Shared.Body.Systems;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -110,7 +111,7 @@ public sealed partial class HealthScannerCMUExtensionSystem : EntitySystem
         var seen = new HashSet<(BodyPartType, BodyPartSymmetry)>();
         foreach (var (partUid, partComp) in _body.GetBodyChildren(patient))
         {
-            if (!TryComp<BodyPart.BodyPartHealthComponent>(partUid, out var ph))
+            if (!TryComp<Body.Part.Components.BodyPartHealthComponent>(partUid, out var ph))
                 continue;
 
             var key = (partComp.PartType, partComp.Symmetry);

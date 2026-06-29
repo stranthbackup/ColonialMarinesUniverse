@@ -1,5 +1,5 @@
 using System.Reflection;
-using Content.Shared._CMU14.Medical.BodyPart;
+using Content.Shared._CMU14.Body.Part.Systems;
 using Content.Shared.Damage;
 using NUnit.Framework;
 

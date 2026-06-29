@@ -5,7 +5,7 @@ using Content.Server.Chat.Systems;
 using Content.Server.Popups;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Surgery;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Medical.Surgery;
 using Content.Shared._RMC14.Medical.Surgery.Conditions;
@@ -27,6 +27,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._CMU14.StatusEffect;
 
 namespace Content.Server._RMC14.Medical.Surgery;
 

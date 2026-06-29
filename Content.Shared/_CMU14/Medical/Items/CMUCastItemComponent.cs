@@ -1,4 +1,5 @@
-using Content.Shared._CMU14.Medical.Bones;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 

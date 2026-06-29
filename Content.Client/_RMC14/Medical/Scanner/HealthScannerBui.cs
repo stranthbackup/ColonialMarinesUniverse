@@ -5,6 +5,7 @@ using Content.Client._RMC14.Medical.HUD;
 using Content.Client.Message;
 using Content.Shared._CMU14.Medical.Stabilizers;
 using Content.Shared._CMU14.Medical.Wounds;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
 using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Medical.HUD;
@@ -978,24 +979,24 @@ public sealed partial class HealthScannerBui : BoundUserInterface
         return PartSeverity.Healthy;
     }
 
-    private static PartSeverity SeverityFromFracture(Content.Shared._CMU14.Medical.Bones.FractureSeverity severity)
+    private static PartSeverity SeverityFromFracture(FractureSeverity severity)
         => severity switch
         {
-            Content.Shared._CMU14.Medical.Bones.FractureSeverity.Hairline => PartSeverity.Bruised,
-            Content.Shared._CMU14.Medical.Bones.FractureSeverity.Simple => PartSeverity.Damaged,
-            Content.Shared._CMU14.Medical.Bones.FractureSeverity.Compound => PartSeverity.Critical,
-            Content.Shared._CMU14.Medical.Bones.FractureSeverity.Comminuted => PartSeverity.Critical,
+            FractureSeverity.Hairline => PartSeverity.Bruised,
+            FractureSeverity.Simple => PartSeverity.Damaged,
+            FractureSeverity.Compound => PartSeverity.Critical,
+            FractureSeverity.Shattered => PartSeverity.Critical,
             _ => PartSeverity.Bruised,
         };
 
-    private static PartSeverity SeverityFromOrganStage(Content.Shared._CMU14.Medical.Organs.OrganDamageStage stage)
+    private static PartSeverity SeverityFromOrganStage(Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage stage)
         => stage switch
         {
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Healthy => PartSeverity.Healthy,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Bruised => PartSeverity.Bruised,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Damaged => PartSeverity.Damaged,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Failing => PartSeverity.Critical,
-            Content.Shared._CMU14.Medical.Organs.OrganDamageStage.Dead => PartSeverity.Severed,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Healthy => PartSeverity.Healthy,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Bruised => PartSeverity.Bruised,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Damaged => PartSeverity.Damaged,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Failing => PartSeverity.Critical,
+            Content.Shared._CMU14.Body.Humanoid.Organ.OrganDamageStage.Dead => PartSeverity.Severed,
             _ => PartSeverity.Healthy,
         };
 

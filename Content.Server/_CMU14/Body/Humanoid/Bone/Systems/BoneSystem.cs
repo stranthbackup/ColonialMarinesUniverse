@@ -1,0 +1,31 @@
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.GameObjects;
+
+namespace Content.Server._CMU14.Body.Humanoid.Bone;
+
+public sealed partial class BoneSystem : SharedBoneSystem
+{
+    [Dependency] private SharedAudioSystem _audio = default!;
+
+    private static readonly SoundSpecifier BoneBreakSound =
+        new SoundCollectionSpecifier("CMUBoneBreakSounds");
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<BoneComponent, BoneFracturedEvent>(OnFractured);
+    }
+
+    private void OnFractured(Entity<BoneComponent> ent, ref BoneFracturedEvent args)
+    {
+        if (args.New < FractureSeverity.Simple || args.New <= args.Old)
+            return;
+
+        _audio.PlayPvs(BoneBreakSound, args.Body);
+    }
+}

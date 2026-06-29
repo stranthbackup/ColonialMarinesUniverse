@@ -1,7 +1,13 @@
 using System.Collections.Generic;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.StatusEffects;
+using Content.Shared.CCVar;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Systems;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared._CMU14.Medical.Wounds;
 using Content.Shared._CMU14.Medical.Wounds.Events;
 using Content.Shared.Body.Part;
@@ -496,7 +502,7 @@ public sealed partial class SharedCMUShrapnelSystem : EntitySystem
         FractureSeverity.Hairline => 3f,
         FractureSeverity.Simple => 8f,
         FractureSeverity.Compound => 14f,
-        FractureSeverity.Comminuted => 22f,
+        FractureSeverity.Shattered => 22f,
         _ => 0f,
     };
 }

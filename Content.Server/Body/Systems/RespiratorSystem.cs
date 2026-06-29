@@ -4,7 +4,7 @@ using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.EntityEffects;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Organs.Lungs.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs.Events;
 using Content.Shared._RMC14.Chemistry.Reagent;
 using Content.Shared._RMC14.Medical.Stasis;
 using Content.Shared.Alert;

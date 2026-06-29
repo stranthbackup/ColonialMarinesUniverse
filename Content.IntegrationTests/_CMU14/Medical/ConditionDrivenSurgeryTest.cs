@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Reflection;
 using Content.Server._CMU14.Medical.Surgery;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Brain;
-using Content.Shared._CMU14.Medical.Organs.Ears;
-using Content.Shared._CMU14.Medical.Organs.Eyes;
-using Content.Shared._CMU14.Medical.Organs.Heart;
-using Content.Shared._CMU14.Medical.Organs.Kidneys;
-using Content.Shared._CMU14.Medical.Organs.Liver;
-using Content.Shared._CMU14.Medical.Organs.Lungs;
-using Content.Shared._CMU14.Medical.Organs.Stomach;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Brain;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Ears;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Eyes;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Heart;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Kidneys;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Liver;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Stomach;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Systems;
 using Content.Shared._CMU14.Medical.Surgery;
 using Content.Shared._CMU14.Medical.Surgery.Markers;
 using Content.Shared._CMU14.Medical.Surgery.Traits;
@@ -94,7 +98,7 @@ public sealed class ConditionDrivenSurgeryTest
                 OpenSoftTissue(entMan, arm);
 
                 var frac = entMan.EnsureComponent<FractureComponent>(arm);
-                fracture.SetSeverity((arm, frac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((arm, frac), FractureSeverity.Shattered);
 
                 traits.EnsureTrait(arm, CMUSurgicalTrait.VascularTear);
                 traits.EnsureTrait(arm, CMUSurgicalTrait.EmbeddedForeignBody);
@@ -274,7 +278,7 @@ public sealed class ConditionDrivenSurgeryTest
                 OpenSoftTissue(entMan, arm);
 
                 var frac = entMan.EnsureComponent<FractureComponent>(arm);
-                fracture.SetSeverity((arm, frac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((arm, frac), FractureSeverity.Shattered);
                 ClearSurgicalTraits(traits, arm);
 
                 var armed = flow.TryArmStep(
@@ -345,7 +349,7 @@ public sealed class ConditionDrivenSurgeryTest
                 OpenSoftTissue(entMan, arm);
 
                 var frac = entMan.EnsureComponent<FractureComponent>(arm);
-                fracture.SetSeverity((arm, frac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((arm, frac), FractureSeverity.Shattered);
                 ClearSurgicalTraits(traits, arm);
                 traits.EnsureTrait(arm, CMUSurgicalTrait.BoneSplintered);
 
@@ -438,7 +442,7 @@ public sealed class ConditionDrivenSurgeryTest
                 OpenSoftTissue(entMan, arm);
 
                 var frac = entMan.EnsureComponent<FractureComponent>(arm);
-                fracture.SetSeverity((arm, frac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((arm, frac), FractureSeverity.Shattered);
                 ClearSurgicalTraits(traits, arm);
 
                 var armed = ArmStep(
@@ -1303,10 +1307,10 @@ public sealed class ConditionDrivenSurgeryTest
                 var torso = GetBodyPart(entMan, human, BodyPartType.Torso, BodyPartSymmetry.None);
 
                 var armFrac = entMan.EnsureComponent<FractureComponent>(arm);
-                fracture.SetSeverity((arm, armFrac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((arm, armFrac), FractureSeverity.Shattered);
 
                 var torsoFrac = entMan.EnsureComponent<FractureComponent>(torso);
-                fracture.SetSeverity((torso, torsoFrac), FractureSeverity.Comminuted);
+                fracture.SetSeverity((torso, torsoFrac), FractureSeverity.Shattered);
 
                 Assert.Multiple(() =>
                 {

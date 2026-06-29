@@ -1,14 +1,19 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
-using Content.Shared._CMU14.Medical.BodyPart;
-using Content.Shared._CMU14.Medical.BodyPart.Events;
-using Content.Shared._CMU14.Medical.Bones;
-using Content.Shared._CMU14.Medical.Bones.Events;
+using Content.Shared._CMU14.Body.Part.Components;
+using Content.Shared._CMU14.Body.Part.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Components;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Events;
+using Content.Shared._CMU14.Body.Humanoid.Bone.Systems;
 using Content.Shared._CMU14.Medical.Items;
-using Content.Shared._CMU14.Medical.Organs;
-using Content.Shared._CMU14.Medical.Organs.Events;
-using Content.Shared._CMU14.Medical.Organs.Lungs;
-using Content.Shared._CMU14.Medical.StatusEffects;
-using Content.Shared._CMU14.Medical.StatusEffects.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Brain;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Components;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Events;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Eyes;
+using Content.Shared._CMU14.Body.Humanoid.Organ.Lungs;
+using Content.Shared._CMU14.StatusEffect;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Movement.Systems;
@@ -17,6 +22,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
+using Content.Shared._CMU14.StatusEffect.Events;
 
 namespace Content.Shared._CMU14.Medical.Penalties;
 
@@ -213,7 +219,7 @@ public abstract partial class SharedCMUMedicalSpeedSystem : EntitySystem
 
         foreach (var organ in Body.GetBodyOrgans(body))
         {
-            if (!HasComp<Organs.Eyes.EyesComponent>(organ.Id))
+            if (!HasComp<EyesComponent>(organ.Id))
                 continue;
             if (!TryComp<OrganHealthComponent>(organ.Id, out var oh))
                 continue;
@@ -235,7 +241,7 @@ public abstract partial class SharedCMUMedicalSpeedSystem : EntitySystem
 
         foreach (var organ in Body.GetBodyOrgans(body))
         {
-            if (TryComp<Organs.Brain.CMUBrainComponent>(organ.Id, out var brain) && brain.ActionSpeedMultiplier > 0f)
+            if (TryComp<CMUBrainComponent>(organ.Id, out var brain) && brain.ActionSpeedMultiplier > 0f)
                 mult *= 1f / brain.ActionSpeedMultiplier;
         }
 

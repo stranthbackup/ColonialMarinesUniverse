@@ -1,3 +1,4 @@
+using Content.Shared.CCVar;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Body.Part;

@@ -1,4 +1,4 @@
-using Content.Shared._CMU14.Medical.Organs;
+using Content.Shared._CMU14.Body.Humanoid.Organ;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._CMU14.Medical.Surgery.Conditions;

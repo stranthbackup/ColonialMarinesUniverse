@@ -1,3 +1,4 @@
+using Content.Shared.CCVar;
 using Content.Shared._CMU14.Medical;
 using Content.Shared._CMU14.Medical.Penalties;
 using Content.Shared._RMC14.Weapons.Ranged;

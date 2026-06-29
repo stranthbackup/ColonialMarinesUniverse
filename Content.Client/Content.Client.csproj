@@ -40,4 +40,8 @@
       <DependentUpon>ObjectiveIntelWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="_CMU14\Medical\BodyPart\" />
+  </ItemGroup>
 </Project>

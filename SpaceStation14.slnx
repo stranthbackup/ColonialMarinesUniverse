@@ -6,9 +6,7 @@
     <BuildType Name="Tools" />
   </Configurations>
   <Folder Name="/Build Checker/">
-    <Project Path="BuildChecker/BuildChecker.csproj">
-      <Build Solution="Release|*" Project="false" />
-    </Project>
+    <Project Path="BuildChecker/BuildChecker.csproj" />
   </Folder>
   <Folder Name="/Build/">
     <File Path="Tools/generate_hashes.ps1" />
@@ -55,6 +53,7 @@
     <BuildType Solution="DebugOpt|*" Project="Debug" />
     <BuildType Solution="Tools|*" Project="Debug" />
   </Project>
+  <Folder Name="/RobustToolbox/.github/" />
   <Folder Name="/RobustToolbox/.github/workflows/">
     <File Path="RobustToolbox/.github/workflows/benchmarks.yml" />
     <File Path="RobustToolbox/.github/workflows/build-all-configurations.yml" />
