@@ -62,7 +62,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMUSurgeryStepRealignComminutedBone
-  name: Realign comminuted fracture
+  name: Realign shattered fracture
   components:
   - type: CMSurgeryStep
     skill: 1
@@ -71,9 +71,9 @@
     add:
     - type: CMUComminutedBoneRealignedMarker
   - type: CMUFracturedSurgeryCondition
-    requireSeverity: Comminuted
+    requireSeverity: Shattered
   - type: CMUSurgeryStepSetBoneEffect
-    downgradeFrom: Comminuted
+    downgradeFrom: Shattered
     downgradeTo: Compound
     integrityRestore: 25
   - type: Sprite
