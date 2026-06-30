@@ -80,6 +80,7 @@
   id: RMCArmoredUniformBase
   components:
   - type: CMArmor
+    targetSlots: [innerclothing]
     bullet: 10
     melee: 10
 

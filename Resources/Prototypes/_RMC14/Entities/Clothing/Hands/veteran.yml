@@ -10,6 +10,7 @@
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/veteran.rsi
   - type: CMArmor
+    targetSlots: [gloves]
     melee: 40
     bullet: 40
     explosionArmor: 20

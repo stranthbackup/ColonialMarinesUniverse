@@ -103,6 +103,8 @@
   - type: Tag
     tags:
     - RMCHelmet
+  - type: CMArmor
+    targetSlots: [head]
 
 - type: entity
   parent: RMCHelmetBase

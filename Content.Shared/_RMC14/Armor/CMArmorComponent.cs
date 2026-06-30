@@ -1,3 +1,4 @@
+using Content.Shared.Inventory;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._RMC14.Armor;
@@ -6,6 +7,10 @@ namespace Content.Shared._RMC14.Armor;
 [Access(typeof(CMArmorSystem))]
 public sealed partial class CMArmorComponent : Component
 {
+    [DataField]
+    [Access(typeof(CMArmorSystem), typeof(InventorySystem), Other = AccessPermissions.ReadExecute)]
+    public SlotFlags TargetSlots = SlotFlags.NONE;
+
     // TODO RMC14 other types of armor
     [DataField, AutoNetworkedField]
     public int XenoArmor;

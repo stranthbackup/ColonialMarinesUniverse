@@ -119,7 +119,7 @@ public sealed partial class CMArmorSystem : EntitySystem
         if (!TryComp<XenoComponent>(armored, out var xeno))
             return;
 
-        var ev = new CMGetArmorEvent(SlotFlags.OUTERCLOTHING | SlotFlags.INNERCLOTHING);
+        var ev = new CMGetArmorEvent(armored.Comp.TargetSlots);
         RaiseLocalEvent(armored, ref ev);
         var armorMessage = ev.FrontalArmor == 0 &&
                            ev.SideArmor == 0 &&
@@ -325,8 +325,10 @@ public sealed partial class CMArmorSystem : EntitySystem
 
     private void ModifyDamage(EntityUid ent, ref DamageModifyEvent args)
     {
-        // TODO RMC14 the slot should depend on the part that is receiving the damage once part damage is in
-        var ev = new CMGetArmorEvent(SlotFlags.OUTERCLOTHING | SlotFlags.INNERCLOTHING);
+        if (!TryComp(ent, out CMArmorComponent? armored))
+            return;
+
+        var ev = new CMGetArmorEvent(armored.TargetSlots);
         RaiseLocalEvent(ent, ref ev);
 
         var armorPiercing = args.ArmorPiercing;
