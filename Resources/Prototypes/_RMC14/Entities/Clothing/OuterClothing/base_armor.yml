@@ -36,7 +36,7 @@
   - type: MoveOrderArmor
   - type: StoreAfterFailedInteract
   - type: CMArmor
-    slot: [outerclothing]
+    targetSlots: [outerclothing]
 
 - type: entity
   parent: [ RMCBaseArmorNoAccessory, RMCBaseUniformAccessoryItemOuterClothing ]
