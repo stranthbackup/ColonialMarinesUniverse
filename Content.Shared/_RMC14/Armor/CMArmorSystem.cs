@@ -325,7 +325,10 @@ public sealed partial class CMArmorSystem : EntitySystem
 
     private void ModifyDamage(EntityUid ent, ref DamageModifyEvent args)
     {
-        var ev = new CMGetArmorEvent(armored.TargetSlots);
+        if (!TryComp(ent, out CMArmorComponent? armor))
+            return;
+        var armored = armor.TargetSlots;
+        var ev = new CMGetArmorEvent(armored);
         RaiseLocalEvent(ent, ref ev);
 
         var armorPiercing = args.ArmorPiercing;
